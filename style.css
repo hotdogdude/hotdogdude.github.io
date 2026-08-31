@@ -92,7 +92,7 @@ nav h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #ff1313;
+  color: #000000;
 }
 
 #nav-ul {
@@ -203,13 +203,13 @@ nav h1 {
 
 #interests li:hover {
   background: #ff74f8;
-  color: #f700d6;
+  color: #c44545;
   border-color: #f56ccc;
   transform: translateY(-2px);
 }
 /* Portfolio styles */
 .content h1 {
-  color: #008cff;
+  color: #5d7181;
 }
 
 #portfolio {
@@ -232,12 +232,11 @@ nav h1 {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #131213;
+  color: #fc2ba5;
   padding: 16px 20px;
   font-size: 1.1rem;
-  font-weight: 500;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  font-weight: 500;#fff;
+  border: 1px solid #f7c6ee;
   border-radius: 12px;
   transition:
     background 0.25s ease,
@@ -247,7 +246,7 @@ nav h1 {
 
 #portfolio a:hover {
   background: #ef49f5;
-  color: #070707;
+  color: #00d9ff;
   transform: translateX(4px);
 }
 
