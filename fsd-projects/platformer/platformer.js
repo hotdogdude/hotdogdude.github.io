@@ -18,7 +18,7 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(1, 5, 255)"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
@@ -37,11 +37,11 @@ createBadPlatform(650, 570, 40, 600, "gray");
 createPlatform(000, 720, 1400, 100);
 createPlatform(850, 460, 60, 20);
 createPlatform(680, 340, 60, 20);
-createPlatform(950, 250, 60, 20, "red");
+createPlatform(950, 250, 60, 20);
 createPlatform(1200, 000, 0, 250);
 createPlatform(1200, 400, 60, 400);
 createPlatform(1300, 300, 0, 20);
-createPlatform(520, 210, 60, 1);
+createPlatform(520, 210, 60, 0);
 createPlatform(1100, 620, 60, 20,"red");
 createPlatform(980, 550, 60, 20);
 createPlatform(720, 590, 60, 0);
@@ -50,13 +50,12 @@ createBadPlatform(150, 300, 60, 20,"gray");
 createBadPlatform(300, 200, 60, 20,"gray");
 createBadPlatform(200, 700, 60, 0,"gray");
 createPlatform(980, 550, 60, 20);
-createPlatform(400, 400, 60, 1);
+createPlatform(400, 400, 60, 0);
     // TODO 3 - Create Collectables
 createCollectable("poo", 600, 400);
 createCollectable("poo", 315, 170, 0.5, 0.3);
-createCollectable("poo", 1300, 100);
 createCollectable("poo", 420, 100);
-
+createCollectable("poo", 200, 650, 0, 1, 900, 1100, 2)
     
     // TODO 4 - Create Cannons
 createCannon("top", 200, 540);
