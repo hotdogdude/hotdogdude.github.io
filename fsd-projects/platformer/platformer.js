@@ -56,7 +56,7 @@ createCollectable("poo", 600, 400);
 createCollectable("poo", 315, 170, 0.5, 0.3);
 createCollectable("poo", 420, 100);
 createCollectable("poo", 200, 650, 0, 1, 900, 1100, 2)
-    
+createCollectable("poo", 1300, 100);
     // TODO 4 - Create Cannons
 createCannon("top", 200, 540);
 createCannon("right", 300, 1800);
