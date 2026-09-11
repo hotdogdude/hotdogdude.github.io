@@ -6,9 +6,10 @@
     <script src="jquery.min.js"></script>
     <style>
       .box {
-        width: 70px;
-        height: 70px;
-        background-color: rgb(153, 0, 255);
+        width: 90px;
+        height: 90px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubQiVwGE8dW5UH97WR8og6CAONBzk0dwzoSf7gl17EfVLkvmmKvzFzrT7:https://i.pinimg.com/236x/bd/51/49/bd5149cede1712d0a5f87c7aa3f4f354.jpg&s=10");
+        background-size: cover;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -84,8 +85,13 @@
         function update() {
           moveBoxTo(positionX);
           positionX += speed;
-          
-
+            if (positionX > boardWidth) {
+              speed = speed * -1;
+            }
+            if (positionX < 0) {
+              speed *= -1;
+            }
+  
         
 
           
@@ -103,7 +109,7 @@
           changeBoxText(points);
           points += 1;
           speed += 3;
-
+          speed = 3 * points + 10;
 
 
 
