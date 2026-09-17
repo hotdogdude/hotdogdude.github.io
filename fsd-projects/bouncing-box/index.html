@@ -43,7 +43,8 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
-
+        var positionY;
+        var speedY;
         // update the boardWidth variable when the window is resized
         jQuery(window).on("resize", function () {
           boardWidth = board.width();
@@ -73,8 +74,9 @@
           var positionX = 200;
           var points = 1;
           var speed = 3; 
-
-
+          var positionY = 200;
+          var speedY = 3;
+          var randNum = Math.random(100) * 100;
 
 
         /**
@@ -114,7 +116,17 @@
 
 
         }
-
+function moveBoxTo(newPositionX, newPositionY) {
+  box.css("left", newPositionX);
+  box.css("top", newPositionY);
+  
+  if (positionY > boardWidth) {
+              speed = speed * -1;
+            }
+            if (positionY < 0) {
+              speed *= -1;
+            }
+}
 
         
       })();
